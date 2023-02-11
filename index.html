@@ -1,30 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NUEVO PROYECTO</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/6220152d5b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="Assets/CSS/#style.css">
-
-</head>
-<body>
-<nav class="navbar navbar-expand-lg bg-secondary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <img src="Assets/IMG/LOGO ARG PROGRAMA.png" alt="Bootstrap" width="30%" height="">
-      </a>
-      <ul class="list-group list-group-horizontal">
-        <li class="list-group-item"><i class="fa-brands fa-instagram fa-2xl"></i></li>
-        <li class="list-group-item"><i class="fa-brands fa-linkedin fa-2xl"></i></li>
-        <li class="list-group-item"><i class="fa-solid fa-user fa-2xl"></i></li>
-      </ul>
+    <!--CSS only-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/6220152d5b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="Assets/IMG/LOGO ARG PROGRAMA.png"
+            alt="Bootstrap"
+            width="30%"
+            height=""
+          />
+        </a>
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item">
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+          </li>
+          <li class="list-group-item">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </li>
+          <!-- Button trigger modal -->
+          <li class="list-group-item">
+            <i class="fa-solid fa-user-lock fa-2xl"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+            </i>
+          </li>
+        </ul>
+    </nav>
+<!-- Modal -->
+<div
+class="modal fade"
+id="exampleModal"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label"
+          >Mail</label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control-plaintext"
+            id="staticEmail"
+            value="mail@ejemplo.com">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label"
+          >Password</label
+        >
+        <div class="col-sm-10">
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary">
+        Iniciar sesión
+      </button>
+    </div>
   </div>
-</nav>
+</div>
+</div>
+</div>
 
+    <div class="banner">
+      <img
+        src="Assets/IMG/pexels-miguel-á-padriñán-1111368.jpg"
+        height="400"
+        class="d-block w-100"
+        alt="Cielo.dev"
+      />
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
-</html> 
+    <section id="Sobre-mi" class="about">
+      <div class="container text-center">
+      <div class="row justify-content-center">
+      <div class="col-3">
+      <img
+        src="Assets/IMG/foto cuadrada.jpg"
+        class="rounded-circle w-75"
+        alt="..."
+        title="..."
+      />
+    </div>
+    
+    <div class="container text-center mt-4">
+      <div class="row justify-content-center">
+        <div class="col-6">
+    <h5>Mi nombre es Cielo. Soy psicóloga, me encanta mi profesión! Aunque
+      también soy algo inquieta, por eso actualmente estoy conociendo el mundo
+      de la programación. Hola, mundo!</h5>
+    </div>
+  </div>
+  </section>
+
+  <section class="Experiencia" id="exp">
+
+<div class="container mt-4 mb-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section-header text-center text-black mt-5">
+        <h3>Experiencia</h3>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <div class="about-img">
+          <img src="Assets/IMG/MUNICIPALIDADROSARIOLOGO.svg" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="col-10">
+        <div class="about-text text-black">
+          <h6>Dirección de Atención en Violencia de Género.  Municipalidad de Rosario</h6>
+          <p><u>Período:</u> enero - diciembre 2018</p>
+            <p><u>Actividades realizadas:</u> Desempeño como operadora del Teléfono Verde, línea de Atención integral en violencia de género. Entrevistas operativas a mujeres en situación de violencia, delimitación de estrategias interdisciplinarias para su abordaje, articulación con efectores municipales y provinciales, acompañamiento al momento de realizar denuncia, seguimiento y retrabajo de casos.
+          </p>
+ 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-2">
+        <div class="about-img">
+          <img src="Assets/IMG/COLEGIOGUADALUPE.png" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="col-10">
+        <div class="about-text text-black">
+          <h6>Auxiliar en Colegio Guadalupe de Palermo</h6>
+          <p><u>Período:</u> abril 2022 - actualidad</p>
+            <p><u>Actividades realizadas:</u> Disposición y asistencia en primer ciclo del colegio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-2">
+        <div class="about-img">
+          <img src="Assets/IMG/IMAGENZENIT.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="col-10">
+          <h6>Centro Categorizado Zenit</h6>
+          <p><u>Período:</u> marzo 2019 - actualidad</p>
+            <p><u>Actividades realizadas:</u> Adaptaciones metodológicas y curriculares. Apoyo en la interacción social. Trabajo interdisciplinario. Redacción de informes mensuales.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-2">
+        <div class="about-img">
+          <img src="Assets/IMG/maya-maceka-yW-Qgw_IJXg-unsplash.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="col-10">
+        <div class="about-text text-black">
+          <h6>Atención psicológica online</h6>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="Estudios">
+<div class="container mt-5 mb-5">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section-header text-center text-black mt-5">
+        <h3>Estudios</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<ol class="list-group list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Universidad Nacional de Rosario</div>
+      Facultad de Psicología (2010-2016)
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold"> Ministerio de las Mujeres, Géneros y Diversidad</div>
+      Curso aprobado Micaela para la Ciudadanía (2022)
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Universidad de Buenos Aires</div>
+      Facultad de Psicología - Curso Evaluación forense en casos de violencia familiar y de género de la Carrera de especialización en intervenciones interdisciplinarias en Violencia familiar y de género (2021)
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Universidad de Buenos Aires</div>
+      Facultad de Psicología - Pasantía Clínica en Fundación Alicia Moreau de Justo, CABA. Atención de mujeres víctimas de maltrato, adolescentes, niñas/os víctimas y/o testigos de violencia y/o abuso. Coordinadora general: Norma Bruner (2019)
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+  <div class="fw-bold">Municipalidad de Rosario - Dirección de Atención Integral en Violencia de Género</div>
+  Concurrencia completa en atención, asesoramiento y acompañamiento de mujeres en situación de violencia de género (2017)
+</div>
+  </li>
+</ol>
+
+<div class="container mt-1 mb-5">
+  <div class="row">
+    <div class="col-md-12">
+        <p style="text-align: right;">...y mas!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+
+<section class="HardSoftSection">
+
+<div class="container mt-5 mb-5">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section-header text-center text-black mt-5">
+        <h3>Hard & Soft Skills</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5" id="html">
+<div class="row">
+  <div class="col-md-12">
+    <div class="section-header text-left text-black mt-5">
+      <h5>HTML</h5>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container mt-0" id="progresshtml">
+<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 30%">30%</div>
+</div>
+</div>
+
+<div class="container mt-2" id="css">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section-header text-left text-black mt-5">
+        <h5>CSS</h5>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="container mt-0" id="progresscss">
+  <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 25%">25%</div>
+  </div>
+  </div>
+
+  <div class="container mt-2" id="boostrap">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header text-left text-black mt-5">
+          <h5>BOOTSTRAP</h5>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="container mt-0 mb-5" id="progressboostrap"> 
+    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar" style="width: 35%">35%</div>
+    </div>
+    </div>
+
+</section>
+
+<section class="proyectos">
+  <div class="container mt-5 mb-5">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header text-center text-black mt-5">
+          <h3>Proyectos</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+  <div class="d-flex position-relative">
+    <img src="Assets/IMG/LOGO ARG PROGRAMA.png" class="flex-shrink-0 me-3" width="10%" height="10% "alt="...">
+    <div>
+      <h6 class="mt-0">Desarrollo de aplicación web full stack en curso YoProgramo</h6>
+      <p>HTML - CSS - BOOTSTRAP</p>
+      <a href="#" class="stretched-link">Mirá!</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer class="bg-secondary mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header text-center text-white mt-2">
+          <p>Diseñado con amor y paciencia por <a href="#">mcielodisanto@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
