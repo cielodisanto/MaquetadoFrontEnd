@@ -1,3 +1,11 @@
+.HardSoftSection,
+.EstudiosSection,
+.ExperienciaSection,
+.ProyectosSection {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
 .bg-secondary {
     background: rgb(0,0,0);
     background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(240,59,200,1) 80%, rgba(217,214,217,1) 100%);
@@ -25,6 +33,13 @@
 
 .col-3 {
   margin-top: -100px;
+}
+
+
+
+i.fa-solid.fa-trash-can.fa-xl,
+i.fa-solid.fa-pen-to-square.fa-xl {
+color:rgb(4, 157, 106);
 }
 
 
